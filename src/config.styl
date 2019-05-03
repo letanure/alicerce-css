@@ -1,0 +1,57 @@
+/*
+# CSS Config
+
+All the values are defined as CSS variables / custom properties in the `:root`
+
+The default font is _Noto Sans_
+
+*/
+
+$verticalRhythm = 8px
+
+//
+// Root custom properties
+//
+
+:root
+  // Geral
+  --verticalRhythm $verticalRhythm
+
+  // Font
+  // Font family
+  --fontFamily  'Noto Sans', sans-serif
+
+  // Font Sizes
+  --fontSizeStep .125
+  --fontSize            calc(var(--verticalRhythm) * 2)
+  --fontSize-large--xxx calc(var(--fontSize) * var(--fontSizeStep) * 12)
+  --fontSize-large--xx  calc(var(--fontSize) * var(--fontSizeStep) * 11)
+  --fontSize-large--x   calc(var(--fontSize) * var(--fontSizeStep) * 10)
+  --fontSize-large      calc(var(--fontSize) * var(--fontSizeStep) * 9)
+  --fontSize-medium     calc(var(--fontSize) * var(--fontSizeStep) * 8)
+  --fontSize-small      calc(var(--fontSize) * var(--fontSizeStep) * 7)
+  --fontSize-small--x   calc(var(--fontSize) * var(--fontSizeStep) * 6)
+  --fontSize-small--xx  calc(var(--fontSize) * var(--fontSizeStep) * 5)
+  --fontSize-small--xxx calc(var(--fontSize) * var(--fontSizeStep) * 4)
+
+  // Font weight
+  --fontWeight-bold--xxxx 900
+  --fontWeight-bold--xxx  800
+  --fontWeight-bold--xx   700
+  --fontWeight-bold--x    600
+  --fontWeight-medium     500
+  --fontWeight-regular    400
+  --fontWeight-light      300
+  --fontWeight-light--x   200
+  --fontWeight-light--xx  100
+
+  // Line heights
+  --lineHeight-large--xxx calc(var(--verticalRhythm) * 8)
+  --lineHeight-large--xx  calc(var(--verticalRhythm) * 7)
+  --lineHeight-large--x   calc(var(--verticalRhythm) * 6)
+  --lineHeight-large      calc(var(--verticalRhythm) * 5)
+  --lineHeight-medium     calc(var(--verticalRhythm) * 4)
+  --lineHeight-small      calc(var(--verticalRhythm) * 3)
+  --lineHeight-small--x   calc(var(--verticalRhythm) * 2)
+  --lineHeight-small--xx  calc(var(--verticalRhythm) * 2)
+  --lineHeight-small--xxx calc(var(--verticalRhythm) * 2)
