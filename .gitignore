@@ -1,6 +1,10 @@
 # dependencies
 /node_modules
 
+# builded
+/dist/*.css
+/dist/*.map
+
 # misc
 .DS_Store
 .vscode/chrome

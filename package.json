@@ -27,8 +27,10 @@
       "url": "https://github.com/alicerce/alicerce-css/issues"
    },
    "scripts": {
-    "commit": "npx git-cz",
-    "semantic-release": "semantic-release"
+      "build-stylus": "stylus src/index.styl --out dist/index.css --sourcemap -m",
+      "build-stylus-watch": "stylus --watch src/index.styl --out dist/index.css --sourcemap -m",
+      "commit": "npx git-cz",
+      "semantic-release": "semantic-release"
    },
    "devDependencies": {
       "@commitlint/cli": "^7.5.2",
@@ -40,6 +42,7 @@
       "@semantic-release/npm": "^5.1.4",
       "@semantic-release/release-notes-generator": "^7.1.4",
       "git-cz": "^3.0.1",
+      "stylus": "^0.54.5",
       "yorkie": "^2.0.0"
    },
    "commitlint": {
