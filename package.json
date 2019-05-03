@@ -26,6 +26,21 @@
 	"bugs": {
 	  "url": "https://github.com/alicerce/alicerce-css/issues"
 	},
+	"scripts": {
+    "commit": "npx git-cz"
+	},
 	"devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "git-cz": "^3.0.1",
+    "yorkie": "^2.0.0"
+	},
+	"commitlint": {
+	  "extends": [
+	    "@commitlint/config-conventional"
+	  ]
+	},
+	"gitHooks": {
+	  "commit-msg": "commitlint -E GIT_PARAMS"
 	}
 }
