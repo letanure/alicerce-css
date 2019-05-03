@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+.vscode/chrome
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
